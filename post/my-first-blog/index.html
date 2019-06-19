@@ -184,16 +184,33 @@ PS D:\Program Files&gt; hugo new site MyBlog  下载hugo主题 hugo主题地址
 </code></pre>
 
 <ol>
-<li><p>如果成功会显示一些信息，从里面找到<a href="http://localhost:1313/，复制下来，打开浏览器输入刚复制的本地地址。如果关闭了powershell，浏览器就看不到了。">http://localhost:1313/，复制下来，打开浏览器输入刚复制的本地地址。如果关闭了powershell，浏览器就看不到了。</a></p></li>
+<li><p>如果成功会显示一些信息，从里面找到“<a href="http://localhost:1313/”，复制下来，打开浏览器输入刚复制的本地地址。如果关闭了powershell，浏览器就看不到了。">http://localhost:1313/”，复制下来，打开浏览器输入刚复制的本地地址。如果关闭了powershell，浏览器就看不到了。</a></p></li>
 
 <li><p>如果失败，自己回顾上面步骤找原因，我这小白写的够清楚了吧。</p></li>
 </ol>
 
-<p>右</p>
+<h1 id="github远程部属">github远程部属</h1>
 
-<p><img src="C:UsersAdministrator.DESKTOP-VMCD0INDesktop0.png" alt="" /></p>
+<h2 id="创建仓库">创建仓库</h2>
 
-<h1 id="你好">你好</h1>
+<p>我的仓库名是：teyying.github.io。创建仓库时的&rdquo;/&ldquo;后面,teyying必须是你的用户名，要和&rdquo;/&ldquo;前面的名字一样。</p>
+
+<p><img src="https://github.com/teyying/teyying.github.io/blob/master/0.png" alt="" /></p>
+
+<h2 id="git操作">Git操作</h2>
+
+<p>依次输入以下git语句，“<a href="https://github.com/teyying/teyying.github.io.git”要写成你自己的地址。出现输入账号密码时，输入你的github的账号和密码。">https://github.com/teyying/teyying.github.io.git”要写成你自己的地址。出现输入账号密码时，输入你的github的账号和密码。</a></p>
+
+<pre><code class="language-powershell">PS D:\Program Files\MyBlog\public&gt; git init
+PS D:\Program Files\MyBlog\public&gt; git add .
+PS D:\Program Files\MyBlog\public&gt; git commit -m &quot;我的hugo博客学习&quot;
+PS D:\Program Files\MyBlog\public&gt; git remote add origin https://github.com/teyying/teyying.github.io.git
+PS D:\Program Files\MyBlog\public&gt; git push -u origin master
+</code></pre>
+
+<h2 id="最后呈现">最后呈现</h2>
+
+<p>打开浏览器，“<strong>https://</strong>github.com/teyying/<strong>teyying.github.io</strong>.git”，只输入粗体字部分<a href="https://teyying.github.io。">https://teyying.github.io。</a></p>
 
     </div>
     <div class="post-footer">
