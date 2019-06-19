@@ -221,8 +221,6 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 
 <h2 id="生成静态网站">生成静态网站</h2>
 
-<p>每次修改博客时都要执行一次。</p>
-
 <pre><code class="language-powershell">PS D:\Program Files\MyBlog&gt; hugo --theme=m10c --baseUrl=&quot;https://teyying.github.io/&quot;
 </code></pre>
 
@@ -236,7 +234,9 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 
 <h2 id="推送文件到github仓库">推送文件到github仓库</h2>
 
-<p><strong>在<code>public</code>目录位置</strong>，依次输入以下git语句（“<a href="https://github.com/teyying/teyying.github.io.git”）要写成你自己的地址。出现输入账号密码时，输入你的github的账号和密码。">https://github.com/teyying/teyying.github.io.git”）要写成你自己的地址。出现输入账号密码时，输入你的github的账号和密码。</a></p>
+<p><strong>在<code>public</code>目录位置</strong>，依次输入以下git语句（“<a href="https://github.com/teyying/teyying.github.io.git”）">https://github.com/teyying/teyying.github.io.git”）</a></p>
+
+<p>要写成你自己的地址。第四句添加远程仓库时，根据提示输入你github的账号和密码。</p>
 
 <pre><code class="language-powershell">PS D:\Program Files\MyBlog\public&gt; git init
 PS D:\Program Files\MyBlog\public&gt; git add .
@@ -248,6 +248,22 @@ PS D:\Program Files\MyBlog\public&gt; git push -u origin master
 <h2 id="最后呈现">最后呈现</h2>
 
 <p>打开浏览器，“<strong>https://</strong>github.com/teyying/<strong>teyying.github.io</strong>.git”，只输入粗体字部分<a href="https://teyying.github.io。">https://teyying.github.io。</a></p>
+
+<h2 id="提示">提示：</h2>
+
+<p>当以上都成功后，发表新博客文章及修改内容时，首先都要在<strong>根目录</strong><code>D:\Program Files\MyBlog</code>再生成一次静态文件</p>
+
+<pre><code class="language-powershell">PS D:\Program Files\MyBlog&gt; hugo --theme=m10c --baseUrl=&quot;https://teyying.github.io/&quot;
+</code></pre>
+
+<p>然后在<code>D:\Program Files\MyBlog\public</code>目录下依次执行以下git语句</p>
+
+<pre><code class="language-powershell">PS D:\Program Files\MyBlog\public&gt; git add .
+PS D:\Program Files\MyBlog\public&gt; git commit -m &quot;修改&quot;
+PS D:\Program Files\MyBlog\public&gt; git push
+</code></pre>
+
+<p>不需要再次初始化git（<code>git init</code>），和添加远程仓库了<code>git remote add origin https://github.com/teyying/teyying.github.io.git</code>，推送可以直接<code>git push</code>了。</p>
 
     </div>
     <div class="post-footer">
