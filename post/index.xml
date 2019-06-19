@@ -12,14 +12,23 @@
     
     
     <item>
-      <title>学无止境...</title>
+      <title>纯小白windows系统hugo的github远程部属笔记</title>
       <link>https://teyying.github.io/post/my-first-blog/</link>
       <pubDate>Wed, 19 Jun 2019 14:13:20 +0800</pubDate>
       
       <guid>https://teyying.github.io/post/my-first-blog/</guid>
-      <description> hugo的部属笔记  创建自动部属的文件夹  PS D:\Program Files&amp;gt; hugo new site MyBlog
- 下载主题放在therms文件夹，并测试一下  PS D:\Program Files\MyBlog\themes&amp;gt; tree
-你好 </description>
+      <description>前期工作 markdown学习笔记
+Typora编辑器下载地址
+学习markdown，下载一个markdown编辑器，我推荐使用Typora编辑器。花个几分钟了解一下语法，然后在Typora编辑器里直接使用快捷键就行了。这些可能不是必要的，但是我也是小白，有必要记录一下。
+安装go语言包 go语言包下载地址
+像我一样的小白推荐.msi的方式安装，一直点next，就安装好了，变量环境都自动部属好了。
+安装完成写一个go程序测试一下安装是否成功，不需要学习go语言，我也不会，代码是网上复制的。
+ 创建一个test.go文件名，输入以下内容。  package main import &amp;quot;fmt&amp;quot; func main(){ fmt.Println(&amp;quot;Hello World!&amp;quot;) }   在powershell中运行（注意文件位置）  PS D:\Program Files&amp;gt;go run test.go  安装hugo hugo下载地址
+我目前选的版本是hugo_0.55.6_Windows-64bit.zip，随便解压到一个位置，然后在系统环境变量添加文件位置，我设置的是D:\Program Files\hugo_0.55.6_Windows-64bit
+创建部属的文件夹 会自动生成一些文件
+PS D:\Program Files&amp;gt; hugo new site MyBlog  下载hugo主题 hugo主题地址
+随意挑个喜欢的主题，我选择的是m10c主题
+ 打开m10c主题，复制里面的git代码，直接用git下载到刚生成的themes文件夹（别忘了powershell要先进入到themes文件夹）  PS D:\Program Files\MyBlog\themes&amp;gt; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c   然后查看一下themes文件夹下是否下载好了  PS D:\Program Files\MyBlog\themes&amp;gt; tree  本地部属预览调试 创建博客文件  对于博客.</description>
     </item>
     
   </channel>
