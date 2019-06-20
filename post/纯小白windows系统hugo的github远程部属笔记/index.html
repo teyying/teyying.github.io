@@ -12,48 +12,30 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="纯小白windows系统hugo的github远程部属笔记"/>
-<meta name="twitter:description" content="前期工作 markdown学习笔记
+<meta name="twitter:description" content="前期工作 学习markdown markdown语法笔记
 Typora编辑器下载地址
-学习markdown，下载一个markdown编辑器，我推荐使用Typora编辑器。花个几分钟了解一下语法，然后在Typora编辑器里直接使用快捷键就行了。这些可能不是必要的，但是我也是小白，有必要记录一下。
-安装go语言包 go语言包下载地址
+花个几分钟了解一下语法
+下载一个markdown编辑器，我推荐使用Typora编辑器。了解完语法，然后在Typora编辑器里直接使用快捷键就行了。
+Hugo简介  Hugo 是 Go 编写的静态网站生成器，速度快，易用，可配置。Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。 Hugo 依赖于 Markdown 文件，元数据字体 。用户可以从任意的目录中运行 Hugo，支持共享主机和其他系统。 Hugo 只需要几分之一秒就可以渲染一个经典的中型网站，最好网站的每个部分渲染只需 1 毫秒。 Hugo 非常适合博客，文档等等网站的生成。 Hugo 当前提供 Windows，Linux，FreeBSD，NetBSD 和 OS X (Darwin) 的 x64, i386 和 ARM 架构的二进制预构建包。 Hugo 的源代码可以通过 Go 编译器工具链编译到任意地方运行，例如： DragonFly BSD, OpenBSD, Plan 9 和 Solaris。  安装go语言包 go语言包下载地址
 像我一样的小白推荐.msi的方式安装，一直点next，就安装好了，变量环境都自动部属好了。
 安装完成写一个go程序测试一下安装是否成功，不需要学习go语言，我也不会，代码是网上复制的。
- 创建一个test.go文件名，输入以下内容。  package main import &quot;fmt&quot; func main(){ fmt.Println(&quot;Hello World!&quot;) }   在powershell中运行（注意文件位置）  PS D:\Program Files&gt;go run test.go  安装hugo hugo下载地址
-我目前选的版本是hugo_0.55.6_Windows-64bit.zip，随便解压到一个位置，然后在系统环境变量添加文件位置，我设置的是D:\Program Files\hugo_0.55.6_Windows-64bit
-生成站点 创建部属的文件夹，会自动生成一些文件及文件夹
-PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明：
- archetypes ：存放default.md，头文件格式
- content ：一般在content/post目录存放博客文章（.markdown/.md文件）
- data ：存放自定义模版，导入的toml文件（或json，yaml）
- layouts ：layouts目录存放的是网站的模板文件
- static ：static目录存放js/css/img等静态资源
- config.toml ：config.toml是网站的配置文件
-  下载hugo主题 hugo主题地址
-随意挑个喜欢的主题，我选择的是m10c主题
- 打开m10c主题，复制里面的git代码，直接用git下载到刚生成的themes文件夹（别忘了powershell要先进入到themes文件夹）  PS D:\Program Files\MyBlog\themes&gt; git clone https://github."/>
+创建一个test.go文件名，输入以下内容。
+package main import &quot;fmt&quot; func main(){ fmt.Println(&quot;Hello World!&quot;) }  在powershell中运行（注意文件位置）。
+PS D:\Program Files&gt;go run test."/>
 
     <meta property="og:title" content="纯小白windows系统hugo的github远程部属笔记" />
-<meta property="og:description" content="前期工作 markdown学习笔记
+<meta property="og:description" content="前期工作 学习markdown markdown语法笔记
 Typora编辑器下载地址
-学习markdown，下载一个markdown编辑器，我推荐使用Typora编辑器。花个几分钟了解一下语法，然后在Typora编辑器里直接使用快捷键就行了。这些可能不是必要的，但是我也是小白，有必要记录一下。
-安装go语言包 go语言包下载地址
+花个几分钟了解一下语法
+下载一个markdown编辑器，我推荐使用Typora编辑器。了解完语法，然后在Typora编辑器里直接使用快捷键就行了。
+Hugo简介  Hugo 是 Go 编写的静态网站生成器，速度快，易用，可配置。Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。 Hugo 依赖于 Markdown 文件，元数据字体 。用户可以从任意的目录中运行 Hugo，支持共享主机和其他系统。 Hugo 只需要几分之一秒就可以渲染一个经典的中型网站，最好网站的每个部分渲染只需 1 毫秒。 Hugo 非常适合博客，文档等等网站的生成。 Hugo 当前提供 Windows，Linux，FreeBSD，NetBSD 和 OS X (Darwin) 的 x64, i386 和 ARM 架构的二进制预构建包。 Hugo 的源代码可以通过 Go 编译器工具链编译到任意地方运行，例如： DragonFly BSD, OpenBSD, Plan 9 和 Solaris。  安装go语言包 go语言包下载地址
 像我一样的小白推荐.msi的方式安装，一直点next，就安装好了，变量环境都自动部属好了。
 安装完成写一个go程序测试一下安装是否成功，不需要学习go语言，我也不会，代码是网上复制的。
- 创建一个test.go文件名，输入以下内容。  package main import &quot;fmt&quot; func main(){ fmt.Println(&quot;Hello World!&quot;) }   在powershell中运行（注意文件位置）  PS D:\Program Files&gt;go run test.go  安装hugo hugo下载地址
-我目前选的版本是hugo_0.55.6_Windows-64bit.zip，随便解压到一个位置，然后在系统环境变量添加文件位置，我设置的是D:\Program Files\hugo_0.55.6_Windows-64bit
-生成站点 创建部属的文件夹，会自动生成一些文件及文件夹
-PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明：
- archetypes ：存放default.md，头文件格式
- content ：一般在content/post目录存放博客文章（.markdown/.md文件）
- data ：存放自定义模版，导入的toml文件（或json，yaml）
- layouts ：layouts目录存放的是网站的模板文件
- static ：static目录存放js/css/img等静态资源
- config.toml ：config.toml是网站的配置文件
-  下载hugo主题 hugo主题地址
-随意挑个喜欢的主题，我选择的是m10c主题
- 打开m10c主题，复制里面的git代码，直接用git下载到刚生成的themes文件夹（别忘了powershell要先进入到themes文件夹）  PS D:\Program Files\MyBlog\themes&gt; git clone https://github." />
+创建一个test.go文件名，输入以下内容。
+package main import &quot;fmt&quot; func main(){ fmt.Println(&quot;Hello World!&quot;) }  在powershell中运行（注意文件位置）。
+PS D:\Program Files&gt;go run test." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://teyying.github.io/post/my-first-blog/" />
+<meta property="og:url" content="https://teyying.github.io/post/%E7%BA%AF%E5%B0%8F%E7%99%BDwindows%E7%B3%BB%E7%BB%9Fhugo%E7%9A%84github%E8%BF%9C%E7%A8%8B%E9%83%A8%E5%B1%9E%E7%AC%94%E8%AE%B0/" />
 <meta property="article:published_time" content="2019-06-19T14:13:20&#43;08:00"/>
 <meta property="article:modified_time" content="2019-06-19T14:13:20&#43;08:00"/>
 
@@ -66,7 +48,7 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
       <p>看破了，是感慨，看淡了，是境界...</p>
       <div class="app-header-social">
         
-          <a target="_blank" href="https://github.com/vaga"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+          <a target="_blank" href="https://github.com/teyying"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
   <title>github</title>
   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 </svg></a>
@@ -91,7 +73,7 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          1 min read
+          2 min read
         </div></div>
     </header>
     <div class="post-content">
@@ -99,11 +81,26 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 
 <h1 id="前期工作">前期工作</h1>
 
-<p><a href="https://www.jianshu.com/p/c6aa2f35d5ae">markdown学习笔记</a></p>
+<h2 id="学习markdown">学习markdown</h2>
+
+<p><a href="https://www.jianshu.com/p/c6aa2f35d5ae">markdown语法笔记</a></p>
 
 <p><a href="http://mydown.yesky.com/pcsoft/107253300.html">Typora编辑器下载地址</a></p>
 
-<p>学习markdown，下载一个markdown编辑器，我推荐使用Typora编辑器。花个几分钟了解一下语法，然后在Typora编辑器里直接使用快捷键就行了。这些可能不是必要的，但是我也是小白，有必要记录一下。</p>
+<p>花个几分钟了解一下语法</p>
+
+<p>下载一个markdown编辑器，我推荐使用Typora编辑器。了解完语法，然后在Typora编辑器里直接使用快捷键就行了。</p>
+
+<h2 id="hugo简介">Hugo简介</h2>
+
+<ul>
+<li>Hugo 是 Go 编写的静态网站生成器，速度快，易用，可配置。Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。</li>
+<li>Hugo 依赖于 Markdown 文件，元数据字体 。用户可以从任意的目录中运行 Hugo，支持共享主机和其他系统。</li>
+<li>Hugo 只需要几分之一秒就可以渲染一个经典的中型网站，最好网站的每个部分渲染只需 1 毫秒。</li>
+<li>Hugo 非常适合博客，文档等等网站的生成。</li>
+<li>Hugo 当前提供 Windows，Linux，FreeBSD，NetBSD 和 OS X (Darwin) 的 x64, i386 和 ARM 架构的二进制预构建包。</li>
+<li>Hugo 的源代码可以通过 Go 编译器工具链编译到任意地方运行，例如： DragonFly BSD, OpenBSD, Plan 9 和 Solaris。</li>
+</ul>
 
 <h2 id="安装go语言包">安装go语言包</h2>
 
@@ -113,33 +110,29 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 
 <p>安装完成写一个go程序测试一下安装是否成功，不需要学习go语言，我也不会，代码是网上复制的。</p>
 
-<ol>
-<li>创建一个test.go文件名，输入以下内容。</li>
-</ol>
+<p>创建一个test.go文件名，输入以下内容。</p>
 
-<pre><code class="language-go">   package main
-   import &quot;fmt&quot;
-   func main(){
-   	fmt.Println(&quot;Hello World!&quot;)
-   }
+<pre><code class="language-go">package main
+import &quot;fmt&quot;
+func main(){
+	fmt.Println(&quot;Hello World!&quot;)
+}
 </code></pre>
 
-<ol>
-<li>在powershell中运行（注意文件位置）</li>
-</ol>
+<p>在powershell中运行（注意文件位置）。</p>
 
-<pre><code class="language-powershell">   PS D:\Program Files&gt;go run test.go
+<pre><code class="language-powershell">PS D:\Program Files&gt;go run test.go
 </code></pre>
 
 <h2 id="安装hugo">安装hugo</h2>
 
 <p><a href="https://github.com/gohugoio/hugo/releases">hugo下载地址</a></p>
 
-<p>我目前选的版本是<a href="https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Windows-64bit.zip">hugo_0.55.6_Windows-64bit.zip</a>，随便解压到一个位置，然后在系统环境变量添加文件位置，我设置的是D:\Program Files\hugo_0.55.6_Windows-64bit</p>
+<p>我目前选的版本是<a href="https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Windows-64bit.zip">hugo_0.55.6_Windows-64bit.zip</a>，随便解压到一个位置，然后在系统环境变量添加文件位置，我设置的是D:\Program Files\hugo_0.55.6_Windows-64bit。</p>
 
 <h2 id="生成站点">生成站点</h2>
 
-<p>创建部属的文件夹，会自动生成一些文件及文件夹</p>
+<p>创建部属的文件夹，会在当前位置自动生成一个文件夹。</p>
 
 <pre><code class="language-powershell">PS D:\Program Files&gt; hugo new site MyBlog
 </code></pre>
@@ -149,7 +142,7 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 <ul>
 <li><p>archetypes ：存放default.md，头文件格式</p></li>
 
-<li><p>content ：一般在content/post目录存放博客文章（.markdown/.md文件）</p></li>
+<li><p>content ：一般在content/post目录存放博客文章（.md文件）</p></li>
 
 <li><p>data ：存放自定义模版，导入的toml文件（或json，yaml）</p></li>
 
@@ -157,52 +150,46 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 
 <li><p>static ：static目录存放js/css/img等静态资源</p></li>
 
-<li><p>config.toml ：config.toml是网站的配置文件</p></li>
+<li><p>config.toml ：网站的配置文件</p></li>
 </ul>
 
 <h2 id="下载hugo主题">下载hugo主题</h2>
 
 <p><a href="https://themes.gohugo.io/">hugo主题地址</a></p>
 
-<p>随意挑个喜欢的主题，我选择的是<a href="https://themes.gohugo.io/hugo-theme-m10c/">m10c</a>主题</p>
+<p>随意挑个喜欢的主题，我选择的是<a href="https://themes.gohugo.io/hugo-theme-m10c/">m10c</a>主题。</p>
 
-<ol>
-<li>打开m10c主题，复制里面的git代码，直接用git下载到刚生成的themes文件夹（别忘了powershell要先进入到themes文件夹）</li>
-</ol>
+<p>打开m10c主题，复制里面的git代码，直接用git下载到刚生成的themes文件夹（别忘了powershell要先进入到themes文件夹），</p>
 
-<pre><code class="language-powershell">   PS D:\Program Files\MyBlog\themes&gt; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+<pre><code class="language-powershell">PS D:\Program Files\MyBlog\themes&gt; git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
 </code></pre>
 
-<ol>
-<li>然后查看一下themes文件夹下是否下载好主题了</li>
-</ol>
+<p>然后查看一下themes文件夹下是否下载好主题了。</p>
 
-<pre><code class="language-powershell">   PS D:\Program Files\MyBlog\themes&gt; tree
+<pre><code class="language-powershell">PS D:\Program Files\MyBlog\themes&gt; tree
 </code></pre>
+
+<p><br/><br/><br/></p>
 
 <h1 id="本地部属预览调试">本地部属预览调试</h1>
 
 <h2 id="创建博客文件">创建博客文件</h2>
 
-<ol>
-<li>对于博客.md文件，通常放在 <code>content/post</code> 目录中</li>
-</ol>
+<p>对于博客.md文件，通常放在 <code>content/post</code> 目录中，</p>
 
-<pre><code class="language-powershell">   PS D:\Program Files\MyBlog&gt;hugo new post/MyFirstBlog.md
+<pre><code class="language-powershell">PS D:\Program Files\MyBlog&gt;hugo new post/MyFirstBlog.md
 </code></pre>
 
-<ol>
-<li>然后在MyFirstBlog.md文件里输出一些内容()</li>
-</ol>
+<p>然后在MyFirstBlog.md文件里输出一些内容。</p>
 
-<pre><code class="language-markdown">   ---
-   title: &quot;我的第一篇博客&quot;
-   date: 2019-06-19T14:13:20+08:00
-   draft: false
-   ---
-   # 感谢
-   
-   谢谢**那刻温存**小白同学的细心写作。
+<pre><code class="language-markdown">---
+title: &quot;那刻温存丶的博客&quot;
+date: 2019-06-19T14:13:20+08:00
+draft: false
+---
+# 感谢
+
+谢谢**那刻温存**小白同学的细心写作。
 </code></pre>
 
 <p>备注：“&mdash;”之间的内容是自动生成的，把draft值改为false，原因见下面的<strong>启动 hugo 自带的服务器调试预览博客</strong>。</p>
@@ -222,6 +209,8 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 <li>如果成功会显示一些信息，从里面找到“<a href="http://localhost:1313/”，复制下来，打开浏览器输入刚复制的本地地址。如果关闭了powershell，浏览器就看不到了。">http://localhost:1313/”，复制下来，打开浏览器输入刚复制的本地地址。如果关闭了powershell，浏览器就看不到了。</a></li>
 </ol>
 
+<p><br/><br/><br/></p>
+
 <h1 id="github远程部属">github远程部属</h1>
 
 <h2 id="生成静态网站">生成静态网站</h2>
@@ -235,7 +224,7 @@ PS D:\Program Files&gt; hugo new site MyBlog  创建的站点文件目录说明�
 
 <p>我的仓库名是：teyying.github.io。创建仓库时的&rdquo;/&ldquo;后面,teyying必须是你的用户名，要和&rdquo;/&ldquo;前面的名字一样。</p>
 
-<p><img src="/0.png" alt="" /></p>
+<p><img src="/纯小白windows系统hugo的github远程部属笔记/0.png" alt="" /></p>
 
 <h2 id="推送文件到github仓库">推送文件到github仓库</h2>
 
@@ -253,6 +242,40 @@ PS D:\Program Files\MyBlog\public&gt; git push -u origin master
 <h2 id="最后呈现">最后呈现</h2>
 
 <p>打开浏览器，“<strong>https://</strong>github.com/teyying/<strong>teyying.github.io</strong>.git”，只输入粗体字部分<a href="https://teyying.github.io。">https://teyying.github.io。</a></p>
+
+<h2 id="修改配置">修改配置</h2>
+
+<p>打开<code>config.toml</code>文件</p>
+
+<p><img src="/纯小白windows系统hugo的github远程部属笔记/2.jpg" alt="" /></p>
+
+<p>修改以下内容（目前我只会这些参数）</p>
+
+<pre><code class="language-toml">baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;那刻温存丶的博客&quot;
+
+[params]
+    author = &quot;那刻温存丶&quot;
+    description = &quot;看破了，是感慨，看淡了，是境界...&quot;
+    avatar = &quot;01.jpg&quot;  # 改变头像，要把图片放在你的主题文件夹下的static文件夹中
+
+[[params.social]]
+    name = &quot;github&quot;
+    url = &quot;https://github.com/vaga&quot;
+</code></pre>
+
+<h2 id="改变头像">改变头像</h2>
+
+<p>要把图片放在你的主题文件夹下的static文件夹中</p>
+
+<p><img src="/纯小白windows系统hugo的github远程部属笔记/1.jpg" alt="" /></p>
+
+<h2 id="博客插入图片">博客插入图片</h2>
+
+<p>同改变头像一样，，可以static文件夹下新建一个文件夹，比如我放在<code>D:\Program Files\MyBlog\themes\m10c\static\纯小白windows系统hugo的github远程部属笔记\01.jpg</code>，然后博客文档（.md）里在适当位置添加图片就OK了。</p>
+
+<p><img src="/纯小白windows系统hugo的github远程部属笔记/3.jpg" alt="" /></p>
 
 <h2 id="提示">提示：</h2>
 

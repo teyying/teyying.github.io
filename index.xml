@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>看破了，是感慨，看淡了，是境界...</title>
+    <title>那刻温存丶的博客</title>
     <link>https://teyying.github.io/</link>
-    <description>Recent content on 看破了，是感慨，看淡了，是境界...</description>
+    <description>Recent content on 那刻温存丶的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Jun 2019 14:13:20 +0800</lastBuildDate>
@@ -13,29 +13,20 @@
     
     <item>
       <title>纯小白windows系统hugo的github远程部属笔记</title>
-      <link>https://teyying.github.io/post/my-first-blog/</link>
+      <link>https://teyying.github.io/post/%E7%BA%AF%E5%B0%8F%E7%99%BDwindows%E7%B3%BB%E7%BB%9Fhugo%E7%9A%84github%E8%BF%9C%E7%A8%8B%E9%83%A8%E5%B1%9E%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 19 Jun 2019 14:13:20 +0800</pubDate>
       
-      <guid>https://teyying.github.io/post/my-first-blog/</guid>
-      <description>前期工作 markdown学习笔记
+      <guid>https://teyying.github.io/post/%E7%BA%AF%E5%B0%8F%E7%99%BDwindows%E7%B3%BB%E7%BB%9Fhugo%E7%9A%84github%E8%BF%9C%E7%A8%8B%E9%83%A8%E5%B1%9E%E7%AC%94%E8%AE%B0/</guid>
+      <description>前期工作 学习markdown markdown语法笔记
 Typora编辑器下载地址
-学习markdown，下载一个markdown编辑器，我推荐使用Typora编辑器。花个几分钟了解一下语法，然后在Typora编辑器里直接使用快捷键就行了。这些可能不是必要的，但是我也是小白，有必要记录一下。
-安装go语言包 go语言包下载地址
+花个几分钟了解一下语法
+下载一个markdown编辑器，我推荐使用Typora编辑器。了解完语法，然后在Typora编辑器里直接使用快捷键就行了。
+Hugo简介  Hugo 是 Go 编写的静态网站生成器，速度快，易用，可配置。Hugo 有一个内容和模板目录，把他们渲染到完全的 HTML 网站。 Hugo 依赖于 Markdown 文件，元数据字体 。用户可以从任意的目录中运行 Hugo，支持共享主机和其他系统。 Hugo 只需要几分之一秒就可以渲染一个经典的中型网站，最好网站的每个部分渲染只需 1 毫秒。 Hugo 非常适合博客，文档等等网站的生成。 Hugo 当前提供 Windows，Linux，FreeBSD，NetBSD 和 OS X (Darwin) 的 x64, i386 和 ARM 架构的二进制预构建包。 Hugo 的源代码可以通过 Go 编译器工具链编译到任意地方运行，例如： DragonFly BSD, OpenBSD, Plan 9 和 Solaris。  安装go语言包 go语言包下载地址
 像我一样的小白推荐.msi的方式安装，一直点next，就安装好了，变量环境都自动部属好了。
 安装完成写一个go程序测试一下安装是否成功，不需要学习go语言，我也不会，代码是网上复制的。
- 创建一个test.go文件名，输入以下内容。  package main import &amp;quot;fmt&amp;quot; func main(){ fmt.Println(&amp;quot;Hello World!&amp;quot;) }   在powershell中运行（注意文件位置）  PS D:\Program Files&amp;gt;go run test.go  安装hugo hugo下载地址
-我目前选的版本是hugo_0.55.6_Windows-64bit.zip，随便解压到一个位置，然后在系统环境变量添加文件位置，我设置的是D:\Program Files\hugo_0.55.6_Windows-64bit
-生成站点 创建部属的文件夹，会自动生成一些文件及文件夹
-PS D:\Program Files&amp;gt; hugo new site MyBlog  创建的站点文件目录说明：
- archetypes ：存放default.md，头文件格式
- content ：一般在content/post目录存放博客文章（.markdown/.md文件）
- data ：存放自定义模版，导入的toml文件（或json，yaml）
- layouts ：layouts目录存放的是网站的模板文件
- static ：static目录存放js/css/img等静态资源
- config.toml ：config.toml是网站的配置文件
-  下载hugo主题 hugo主题地址
-随意挑个喜欢的主题，我选择的是m10c主题
- 打开m10c主题，复制里面的git代码，直接用git下载到刚生成的themes文件夹（别忘了powershell要先进入到themes文件夹）  PS D:\Program Files\MyBlog\themes&amp;gt; git clone https://github.</description>
+创建一个test.go文件名，输入以下内容。
+package main import &amp;quot;fmt&amp;quot; func main(){ fmt.Println(&amp;quot;Hello World!&amp;quot;) }  在powershell中运行（注意文件位置）。
+PS D:\Program Files&amp;gt;go run test.</description>
     </item>
     
   </channel>
